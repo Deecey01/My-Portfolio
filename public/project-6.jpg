@@ -1,6 +1,0 @@
-<!-- Project 6 placeholder -->
-<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="600" height="400" fill="#DB2777"/>
-  <rect x="50" y="50" width="500" height="300" fill="#EC4899" rx="10"/>
-  <text x="300" y="210" text-anchor="middle" fill="white" font-family="Arial" font-size="20">Stock Predictor</text>
-</svg>

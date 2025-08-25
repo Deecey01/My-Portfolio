@@ -1,6 +1,0 @@
-<!-- Project 4 placeholder -->
-<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="600" height="400" fill="#DC2626"/>
-  <rect x="50" y="50" width="500" height="300" fill="#EF4444" rx="10"/>
-  <text x="300" y="210" text-anchor="middle" fill="white" font-family="Arial" font-size="20">Collaborative IDE</text>
-</svg>

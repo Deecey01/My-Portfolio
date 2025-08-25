@@ -4,78 +4,63 @@ import { motion } from 'framer-motion';
 import { Briefcase, Calendar, MapPin, ExternalLink } from 'lucide-react';
 
 const Experience = () => {
-  const experiences = [
+const experiences = [
     {
-      title: "Software Engineering Intern",
-      company: "Google",
-      location: "Bangalore, India",
-      duration: "May 2024 - July 2024",
-      type: "Internship",
-      description: "Worked on optimizing search algorithms for Google Search, focusing on improving query understanding and result relevance. Collaborated with senior engineers to implement machine learning models that enhanced search performance by 15%.",
-      achievements: [
-        "Developed a new ML model for query intent classification with 92% accuracy",
-        "Optimized search indexing pipeline, reducing latency by 20%",
-        "Collaborated with cross-functional teams across 3 different time zones",
-        "Presented findings to senior leadership and received outstanding intern feedback"
-      ],
-      technologies: ["Python", "TensorFlow", "C++", "BigQuery", "Protocol Buffers"],
-      website: "https://google.com"
+        title: "Product Engineering Intern",
+        company: "Sprinklr",
+        location: "Gurgaon, India",
+        duration: "May 2025 - July 2025",
+        type: "Internship",
+        description: "Developed a comprehensive MS Teams standup bot using Azure Bot Framework to streamline team communication and project management across multiple teams. Integrated advanced features including LLM-powered summarization and automated reporting to significantly reduce administrative overhead.",
+        achievements: [
+            "Built MS Teams standup bot serving multiple teams with 15+ role-based commands",
+            "Integrated Jira REST API for seamless ticket tracking and project management",
+            "Implemented LLM for summarization and dynamic Confluence template generation",
+            "Reduced admin overhead by 70% through automation and intelligent workflows",
+            "Deployed on company Kubernetes cluster with dedicated CNAME for production use"
+        ],
+        technologies: ["Azure Bot Framework", "MongoDB", "Jira REST API", "LLM", "Docker", "Kubernetes", "Helm"],
+        website: "https://sprinklr.com"
     },
     {
-      title: "Research Assistant",
-      company: "IIT Guwahati AI Lab",
-      location: "Guwahati, Assam",
-      duration: "January 2024 - Present",
-      type: "Research",
-      description: "Conducting research on natural language processing and computer vision under Prof. [Name]. Focus on developing multimodal AI systems that can understand and generate content across text and image modalities.",
-      achievements: [
-        "Published 2 papers in top-tier conferences (NeurIPS, ICML)",
-        "Developed a novel attention mechanism for multimodal transformers",
-        "Created a dataset of 100K+ image-text pairs for training",
-        "Mentored 3 junior students in machine learning research"
-      ],
-      technologies: ["PyTorch", "Transformers", "OpenCV", "CUDA", "Weights & Biases"],
-      website: "https://iitg.ac.in"
+        title: "Web Development Head",
+        company: "Coding Club, IIT Guwahati",
+        location: "Guwahati, Assam",
+        duration: "June 2024 - May 2025",
+        type: "Position of Responsibility",
+        description: "Leading the web development vertical of the Coding Club at IIT Guwahati. Responsible for organizing and conducting web development courses, heading club projects, and managing a team of developers for competitive programming and project development initiatives.",
+        achievements: [
+            "Organized and led comprehensive web development courses for 100+ students",
+            "Managed a team of 15 developers for an InterIIT competition project",
+            "Achieved Bronze medal in InterIIT competition through effective team leadership",
+            "Developed and maintained multiple club projects and web applications",
+            "Mentored junior students in full-stack development and modern web technologies"
+        ],
+        technologies: ["Next.js", "React", "MongoDB", "Node.js", "Express", "Socket.io", "JavaScript", "TypeScript"],
+        website: "https://github.com/Coding-Club-IITG"
     },
     {
-      title: "Full Stack Developer Intern",
-      company: "Startup XYZ",
-      location: "Remote",
-      duration: "June 2023 - August 2023",
-      type: "Internship",
-      description: "Built and maintained web applications for a fintech startup. Responsible for both frontend user interfaces and backend API development. Worked in an agile environment with rapid deployment cycles.",
-      achievements: [
-        "Built a complete user dashboard from scratch using React and Node.js",
-        "Implemented real-time notifications using WebSockets",
-        "Reduced API response times by 40% through database optimization",
-        "Wrote comprehensive test suites achieving 95% code coverage"
-      ],
-      technologies: ["React", "Node.js", "PostgreSQL", "Redis", "AWS", "Docker"],
-      website: ""
-    },
-    {
-      title: "Teaching Assistant",
-      company: "IIT Guwahati",
-      location: "Guwahati, Assam",
-      duration: "August 2023 - December 2023",
-      type: "Teaching",
-      description: "Teaching assistant for CS101: Introduction to Programming course. Responsible for conducting lab sessions, grading assignments, and helping students with programming concepts and problem-solving techniques.",
-      achievements: [
-        "Conducted weekly lab sessions for 60+ students",
-        "Developed automated grading scripts that saved 10 hours/week",
-        "Maintained 95% student satisfaction rating",
-        "Created supplementary learning materials and tutorials"
-      ],
-      technologies: ["Python", "C++", "Git", "Jupyter Notebooks", "VS Code"],
-      website: "https://iitg.ac.in"
+        title: "Head of Web Operations",
+        company: "Prayatna, IIT Guwahati",
+        location: "Guwahati, Assam",
+        duration: "June 2024 - May 2025",
+        type: "Position of Responsibility",
+        description: "Leading web operations for Prayatna, the biggest social fest in North East India. Responsible for managing the entire web infrastructure, coordinating with multiple teams, and ensuring seamless digital experience for thousands of participants.",
+        achievements: [
+            "Led a team of 5 people to independently handle web operations for major social fest",
+            "Managed web infrastructure for thousands of participants and visitors",
+            "Coordinated with multiple teams to ensure seamless digital experience"
+        ],
+        technologies: ["HTML", "CSS"],
+        website: "https://prayatna2025.vercel.app"
     }
-  ];
+];
 
   const getTypeColor = (type: string) => {
     switch (type) {
       case 'Internship':
         return 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300';
-      case 'Research':
+      case 'Position of Responsibility':
         return 'bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300';
       case 'Teaching':
         return 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300';

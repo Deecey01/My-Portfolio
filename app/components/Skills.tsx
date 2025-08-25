@@ -10,11 +10,9 @@ const Skills = () => {
       title: "Programming Languages",
       skills: [
         { name: "Python", level: 95 },
-        { name: "JavaScript/TypeScript", level: 90 },
         { name: "C++", level: 88 },
-        { name: "Java", level: 85 },
-        { name: "Go", level: 80 },
-        { name: "Rust", level: 75 }
+        { name: "JavaScript/TypeScript", level: 80 },
+        { name: "Java", level: 70 }
       ]
     },
     {
@@ -24,16 +22,15 @@ const Skills = () => {
         { name: "React/Next.js", level: 92 },
         { name: "Node.js", level: 88 },
         { name: "Express.js", level: 85 },
-        { name: "HTML/CSS", level: 90 },
-        { name: "GraphQL", level: 82 },
-        { name: "REST APIs", level: 90 }
+        { name: "REST APIs", level: 75 },
+        { name: "HTML/CSS", level: 90 }
       ]
     },
     {
       icon: <Brain className="w-8 h-8" />,
       title: "AI/ML & Data Science",
       skills: [
-        { name: "PyTorch", level: 90 },
+        { name: "PyTorch", level: 80 },
         { name: "TensorFlow", level: 85 },
         { name: "Scikit-learn", level: 88 },
         { name: "Pandas/NumPy", level: 92 },
@@ -45,12 +42,9 @@ const Skills = () => {
       icon: <Database className="w-8 h-8" />,
       title: "Databases & Backend",
       skills: [
-        { name: "PostgreSQL", level: 88 },
-        { name: "MongoDB", level: 85 },
-        { name: "Redis", level: 82 },
-        { name: "ElasticSearch", level: 78 },
-        { name: "Firebase", level: 80 },
-        { name: "GraphQL", level: 85 }
+        { name: "MongoDB", level: 95 },
+        { name: "MySQL", level: 85 },
+        { name: "Appwrite", level: 82 },
       ]
     },
     {
@@ -73,8 +67,7 @@ const Skills = () => {
         { name: "Tailwind CSS", level: 90 },
         { name: "VS Code", level: 95 },
         { name: "Postman", level: 85 },
-        { name: "Jupyter", level: 90 },
-        { name: "Adobe XD", level: 75 }
+        { name: "Jupyter", level: 90 }
       ]
     }
   ];
@@ -186,7 +179,7 @@ const Skills = () => {
         </div>
 
         {/* Certifications */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -228,7 +221,7 @@ const Skills = () => {
               </motion.div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Skills Summary Stats */}
         <motion.div
@@ -239,8 +232,8 @@ const Skills = () => {
           className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
         >
           {[
-            { number: "15+", label: "Programming Languages", color: "text-blue-600" },
-            { number: "25+", label: "Frameworks & Libraries", color: "text-purple-600" },
+            { number: "7+", label: "Programming Languages", color: "text-blue-600" },
+            { number: "15+", label: "Frameworks & Libraries", color: "text-purple-600" },
             { number: "10+", label: "Databases & Tools", color: "text-green-600" },
             { number: "3+", label: "Cloud Platforms", color: "text-orange-600" }
           ].map((stat, index) => (

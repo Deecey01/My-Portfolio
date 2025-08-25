@@ -4,56 +4,88 @@ import { motion } from 'framer-motion';
 import { Trophy, Medal, Award, Star, Users, BookOpen, Code, Zap } from 'lucide-react';
 
 const Achievements = () => {
-  const achievements = [
-    {
-      icon: <Trophy className="w-8 h-8" />,
-      title: "Google Summer of Code 2024",
-      description: "Selected for GSoC 2024 to work on TensorFlow project, implementing neural architecture search algorithms.",
-      date: "2024",
-      category: "Open Source",
-      color: "from-yellow-500 to-orange-500"
-    },
-    {
-      icon: <Medal className="w-8 h-8" />,
-      title: "ACM ICPC Regionalist",
-      description: "Qualified for ACM ICPC Asia-Kolkata Regional Contest 2023, ranked in top 50 teams.",
-      date: "2023",
-      category: "Competitive Programming",
-      color: "from-blue-500 to-purple-500"
-    },
-    {
-      icon: <Award className="w-8 h-8" />,
-      title: "Best Paper Award - EMNLP 2024",
-      description: "Received best paper award for research on multimodal transformers at EMNLP conference.",
-      date: "2024",
-      category: "Research",
-      color: "from-green-500 to-emerald-500"
-    },
-    {
-      icon: <Star className="w-8 h-8" />,
-      title: "Dean's List - Academic Excellence",
-      description: "Consistently maintained top 5% rank in Computer Science department for 3 consecutive semesters.",
-      date: "2022-2024",
-      category: "Academic",
-      color: "from-pink-500 to-rose-500"
-    },
-    {
-      icon: <Users className="w-8 h-8" />,
-      title: "HackMIT Winner",
-      description: "Won first place at HackMIT 2023 for developing an AI-powered accessibility tool for visually impaired users.",
-      date: "2023",
-      category: "Hackathon",
-      color: "from-indigo-500 to-blue-500"
-    },
-    {
-      icon: <BookOpen className="w-8 h-8" />,
-      title: "Research Publication",
-      description: "Published 3 research papers in top-tier venues including NeurIPS, ICML, and EMNLP.",
-      date: "2023-2024",
-      category: "Research",
-      color: "from-purple-500 to-pink-500"
-    }
-  ];
+    const achievements = [
+        {
+            icon: <Trophy className="w-8 h-8" />,
+            title: "Techevince 10.0 - Overall Best Project",
+            description: "Received Overall Best and Audience Best Project in Software Domain for ChainBazaar.",
+            date: "2024",
+            category: "Competition",
+            color: "from-yellow-500 to-orange-500"
+        },
+        {
+            icon: <Medal className="w-8 h-8" />,
+            title: "13th Inter-IIT Bronze Medal",
+            description: "Won bronze medal in product development problem statement creating an AI builder for Dream 11.",
+            date: "2024",
+            category: "Inter-IIT",
+            color: "from-orange-500 to-red-500"
+        },
+        {
+            icon: <Code className="w-8 h-8" />,
+            title: "Meta Hacker Cup 2024",
+            description: "Qualified to 2nd round and secured a rank of 998 out of 22.5K participants.",
+            date: "2024",
+            category: "Competitive Programming",
+            color: "from-blue-500 to-purple-500"
+        },
+        {
+            icon: <Award className="w-8 h-8" />,
+            title: "Kriti 2024 - Business Quiz Gold",
+            description: "Awarded Gold Medal for Business Quiz in Inter Hostel Tech Competition.",
+            date: "2024",
+            category: "Quiz Competition",
+            color: "from-yellow-400 to-yellow-600"
+        },
+        {
+            icon: <Star className="w-8 h-8" />,
+            title: "Kriti 2024 - StartUp Sprint Silver",
+            description: "Awarded Silver Medal for developing a startup idea in Inter Hostel Tech Competition.",
+            date: "2024",
+            category: "Startup",
+            color: "from-gray-400 to-gray-600"
+        },
+        {
+            icon: <Users className="w-8 h-8" />,
+            title: "ICPC-de-Tryst 2024, IIT Delhi",
+            description: "Secured team rank of 55 among 1000+ registrations | Ranked 3rd in IITG.",
+            date: "2024",
+            category: "Competitive Programming",
+            color: "from-indigo-500 to-blue-500"
+        },
+        {
+            icon: <Trophy className="w-8 h-8" />,
+            title: "International Coding League 2024",
+            description: "Secured team rank of 77 among 500+ teams | Ranked 8th in IITG.",
+            date: "2024",
+            category: "Competitive Programming",
+            color: "from-purple-500 to-pink-500"
+        },
+        {
+            icon: <BookOpen className="w-8 h-8" />,
+            title: "JEE Advanced 2022 - AIR 561",
+            description: "Secured All India Rank 561 out of 2,50,000 shortlisted candidates.",
+            date: "2022",
+            category: "Academic",
+            color: "from-green-500 to-emerald-500"
+        },
+        {
+            icon: <Medal className="w-8 h-8" />,
+            title: "JEE Mains 2022 - AIR 762",
+            description: "Secured All India Rank 762 out of 10,00,000+ candidates.",
+            date: "2022",
+            category: "Academic",
+            color: "from-blue-400 to-blue-600"
+        },
+        {
+            icon: <Award className="w-8 h-8" />,
+            title: "KVPY - AIR 1295",
+            description: "Secured All India Rank 1295 out of 50,000+ candidates in Kishore Vaigyanik Protsahan Yojana.",
+            date: "2022",
+            category: "Scholarship",
+            color: "from-pink-500 to-rose-500"
+        }
+    ];
 
   const stats = [
     {
@@ -72,9 +104,9 @@ const Achievements = () => {
     },
     {
       icon: <Trophy className="w-8 h-8" />,
-      number: "15+",
+      number: "3",
       label: "Hackathon Wins",
-      description: "Winner in various national and international hackathons",
+      description: "Winner in various national hackathons",
       color: "text-yellow-600"
     },
     {
@@ -87,10 +119,10 @@ const Achievements = () => {
   ];
 
   const competitiveProgramming = [
-    { platform: "LeetCode", rating: "1750+", rank: "Knight", problems: "300+" },
+    { platform: "LeetCode", rating: "1722", rank: "Knight", problems: "300+" },
     { platform: "Codeforces", rating: "1662", rank: "Expert", contests: "50+" },
     { platform: "CodeChef", rating: "2013", rank: "5 Star", problems: "100+" },
-    { platform: "AtCoder", rating: "1013", rank: "Yellow", contests: "15+" }
+    { platform: "AtCoder", rating: "1015", rank: "Green", contests: "15+" }
   ];
 
   return (

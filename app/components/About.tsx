@@ -80,8 +80,8 @@ const About = () => {
               </p>
 
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                When I&apos;m not coding, you&apos;ll find me capturing moments through photography, 
-                strategizing over a chess board, or diving into the latest sci-fi novel. 
+                When I&apos;m not coding, you&apos;ll find me hitting the gym, playing sports, 
+                enjoying card games with friends, or binge-watching the latest movies and web series. 
                 I believe that diverse interests fuel creativity in problem-solving.
               </p>
             </div>

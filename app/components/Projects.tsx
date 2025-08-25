@@ -6,73 +6,62 @@ import Image from 'next/image';
 
 const Projects = () => {
   const projects = [
-    {
-      title: "AI-Powered Code Review Assistant",
-      description: "A machine learning model that automatically reviews code for potential bugs, security vulnerabilities, and style issues. Built using transformer architecture and trained on large codebases.",
-      image: "/project-1.jpg",
-      technologies: ["Python", "PyTorch", "Transformers", "FastAPI", "React"],
-      githubUrl: "https://github.com/yourusername/ai-code-review",
-      liveUrl: "https://ai-code-review.demo.com",
-      stars: 156,
-      forks: 23,
-      featured: true
-    },
-    {
-      title: "Distributed Task Scheduler",
-      description: "A scalable distributed system for scheduling and executing tasks across multiple nodes. Implements consensus algorithms and fault tolerance mechanisms.",
-      image: "/project-2.jpg",
-      technologies: ["Go", "Docker", "Kubernetes", "Redis", "PostgreSQL"],
-      githubUrl: "https://github.com/yourusername/distributed-scheduler",
-      liveUrl: "",
-      stars: 89,
-      forks: 12,
-      featured: true
-    },
-    {
-      title: "Smart Campus Navigation App",
-      description: "Mobile application for IIT Guwahati campus navigation using indoor positioning and AR technology. Helps students and visitors navigate the large campus efficiently.",
-      image: "/project-3.jpg",
-      technologies: ["React Native", "Node.js", "MongoDB", "AR.js", "Socket.io"],
-      githubUrl: "https://github.com/yourusername/campus-nav",
-      liveUrl: "https://campusnav.app",
-      stars: 67,
-      forks: 8,
-      featured: false
-    },
-    {
-      title: "Real-time Collaborative IDE",
-      description: "Web-based IDE with real-time collaboration features, supporting multiple programming languages with syntax highlighting and auto-completion.",
-      image: "/project-4.jpg",
-      technologies: ["TypeScript", "WebRTC", "Express.js", "Monaco Editor", "WebSockets"],
-      githubUrl: "https://github.com/yourusername/collab-ide",
-      liveUrl: "https://collabide.dev",
-      stars: 134,
-      forks: 19,
-      featured: false
-    },
-    {
-      title: "Blockchain-based Voting System",
-      description: "Secure and transparent voting system using blockchain technology. Ensures vote immutability and provides real-time result tracking.",
-      image: "/project-5.jpg",
-      technologies: ["Solidity", "Web3.js", "React", "Ethereum", "IPFS"],
-      githubUrl: "https://github.com/yourusername/blockchain-voting",
-      liveUrl: "",
-      stars: 92,
-      forks: 15,
-      featured: false
-    },
-    {
-      title: "ML-Based Stock Predictor",
-      description: "Machine learning model for stock price prediction using deep learning techniques. Incorporates technical indicators and sentiment analysis.",
-      image: "/project-6.jpg",
-      technologies: ["Python", "TensorFlow", "Pandas", "Streamlit", "yfinance"],
-      githubUrl: "https://github.com/yourusername/stock-predictor",
-      liveUrl: "https://stock-predictor.streamlit.app",
-      stars: 45,
-      forks: 7,
-      featured: false
-    }
-  ];
+  {
+    title: "Institute Automation System",
+    description: "Comprehensive web application for managing institute operations including student management, course registration, grade tracking, and administrative workflows. Features secure authentication, real-time notifications, and an intuitive dashboard.",
+    image: "/project-1.png",
+    technologies: ["Node.js", "Express.js", "React", "MongoDB", "JWT", "Bootstrap"],
+    githubUrl: "https://github.com/Deecey01/Institute-Automation-System",
+    liveUrl: "",
+    stars: 8,
+    forks: 3,
+    featured: true
+  },
+  {
+    title: "Dream11 AI- Team Predictor",
+    description: "AI-powered fantasy cricket platform with machine learning predictions, real-time match data integration, and intelligent team formation algorithms. Features user contests, leaderboards, and performance analytics.",
+    image: "/project-2.png",
+    technologies: ["Python", "Machine Learning", "React", "Node.js", "MongoDB", "TensorFlow"],
+    githubUrl: "https://github.com/D11-MP/Dream11-prototype",
+    liveUrl: "",
+    stars: 12,
+    forks: 5,
+    featured: true
+  },
+  {
+    title: "Banking Application",
+    description: "Modern banking platform with Plaid integration for real-time bank connections, Dwolla for secure money transfers, and comprehensive transaction management. Features multi-bank account support and expense categorization.",
+    image: "/project-3.png",
+    technologies: ["Next.js", "TypeScript", "Plaid API", "Dwolla", "Appwrite", "TailwindCSS"],
+    githubUrl: "https://github.com/Deecey01/BankingApp",
+    liveUrl: "",
+    stars: 15,
+    forks: 7,
+    featured: false
+  },
+  {
+    title: "TalentPro",
+    description: "Freelancing marketplace platform connecting talent with opportunities. Features service listings, secure payments via Stripe, real-time chat, order management, and comprehensive user profiles for both freelancers and clients.",
+    image: "/project-4.png",
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "Stripe", "Socket.io"],
+    githubUrl: "https://github.com/Deecey01/talentPro",
+    liveUrl: "",
+    stars: 10,
+    forks: 4,
+    featured: false
+  },
+  {
+    title: "ChainBazaar",
+    description: "Decentralized NFT marketplace with KYC verification for enhanced security. Features NFT creation and trading, smart contracts, Web3 integration, PAN verification, and real-time marketplace analytics.",
+    image: "/project-5.png",
+    technologies: ["React", "Solidity", "Web3.js", "Ethereum", "IPFS", "Hardhat"],
+    githubUrl: "https://github.com/Deecey01/ChainBazaar",
+    liveUrl: "",
+    stars: 18,
+    forks: 9,
+    featured: false
+  }
+];
 
   const featuredProjects = projects.filter(project => project.featured);
   const otherProjects = projects.filter(project => !project.featured);

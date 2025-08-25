@@ -26,12 +26,33 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      alert('Thank you for your message! I\'ll get back to you soon.');
-    }, 2000);
+    try {
+        // Using Formspree for form submission (free service)
+        const response = await fetch('https://formspree.io/f/xeoljngv', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                name: formData.name,
+                email: formData.email,
+                subject: formData.subject,
+                message: formData.message,
+            }),
+        });
+
+        if (response.ok) {
+            setFormData({ name: '', email: '', subject: '', message: '' });
+            alert('Thank you for your message! I\'ll get back to you soon.');
+        } else {
+            throw new Error('Failed to send message');
+        }
+    } catch (error) {
+        console.error('Error sending message:', error);
+        alert('Sorry, there was an error sending your message. Please try again or contact me directly via email.');
+    } finally {
+        setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
